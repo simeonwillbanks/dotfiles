@@ -27,3 +27,4 @@
 .zsh_history
 .zshrc
 .zshrc.pre-oh-my-zsh
+.pgpass
