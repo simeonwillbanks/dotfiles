@@ -1,4 +1,4 @@
-color sunburst
+colorscheme default
 
 " Map leader key to comma
 let mapleader = ","
