@@ -1,0 +1,3 @@
+" Include user's local pre .vimrc config
+
+:let mapleader = ","
