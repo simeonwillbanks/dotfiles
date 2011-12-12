@@ -26,6 +26,11 @@
       df = diff
       lg = log -p
       who = shortlog -s --
+      up = !git fetch origin && git rebase origin/master
+      ir = !git rebase -i origin/master
+      lr = !git pull --rebase
+      rmb = !sh -c 'git branch -D $1 && git push origin :$1' -
+      cleanup = !git remote prune origin && git gc && git clean -dfx && git stash clear
   [core]
       excludesfile = /Users/simeon/.gitignore_global
 
