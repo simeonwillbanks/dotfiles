@@ -30,7 +30,7 @@
       ir = !git rebase -i origin/master
       lr = !git pull --rebase
       rmb = !sh -c 'git branch -D $1 && git push origin :$1' -
-      cleanup = !git remote prune origin && git gc && git clean -dfx && git stash clear
+      cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
       next = !git add . && git rebase --continue
   [core]
       excludesfile = /Users/simeon/.gitignore_global
