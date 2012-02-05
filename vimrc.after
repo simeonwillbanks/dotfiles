@@ -2,6 +2,3 @@ colorscheme default
 
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 
-"Command-T Plugin open file in a new tab
-let g:CommandTAcceptSelectionMap = '<C-t>'
-let g:CommandTAcceptSelectionTabMap = '<CR>'
