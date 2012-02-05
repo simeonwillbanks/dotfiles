@@ -45,8 +45,6 @@ task :install do
     link_file(file)
   end
 
-  # Add sunburst color scheme
-  link_file 'vim/janus/vim/colors/sunburst'
 end
 
 def replace_file(file)
