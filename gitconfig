@@ -32,6 +32,8 @@
       rmb = !sh -c 'git branch -D $1 && git push origin :$1' -
       cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
       next = !git add . && git rebase --continue
+      ctags = ! .git/hooks/ctags
   [core]
-      excludesfile = /Users/simeon/.gitignore_global
-
+      excludesfile = ~/.gitignore_global
+  [init]
+      templatedir = ~/.git_template
