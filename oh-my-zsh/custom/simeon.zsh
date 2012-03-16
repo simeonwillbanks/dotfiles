@@ -3,6 +3,7 @@ export VISUAL="/usr/bin/vim"
 export EDITOR="/usr/bin/vim"
 
 alias mvim='nocorrect mvim'
+alias v='mvim .'
 alias gitx='nocorrect gitx'
 alias ctagsg="ctags -R --exclude=.git --exclude=log *"
 alias pgst='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
