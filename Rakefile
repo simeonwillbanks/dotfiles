@@ -45,6 +45,12 @@ task :install do
     link_file(file)
   end
 
+  # oh-my-zsh themes
+  # link oh-my-zsh/themes/* into ~/.oh-my-zsh/themes/*
+  Dir['oh-my-zsh/themes/*'].each do |file|
+    link_file(file)
+  end
+
 end
 
 def replace_file(file)
