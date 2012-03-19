@@ -29,12 +29,12 @@ ZSH_THEME="simeon"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler cap gem git git-flow github heroku history-substring-search osx pow rails3 redis-cli ruby)
+plugins=(vi-mode brew bundler cap gem git git-flow github heroku history-substring-search osx pow rails3 redis-cli ruby)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$HOME/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+export PATH=/usr/local/bin:$HOME/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
 # Add rbenv init to your shell to enable shims and autocompletion
 eval "$(rbenv init -)"
