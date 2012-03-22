@@ -1,9 +1,11 @@
 require 'rake'
 require 'erb'
 
-desc "install the dot files into user's home directory"
-task :install do
-  replace_all = false
+desc "Install the dot files into user's home directory. If task invoked by rake install[true], all dot files will be replaced by default."
+task :install, [:replace_all] do |t, args|
+  args.with_defaults(:replace_all => "false")
+  replace_all = args.replace_all == "true" ? true : false
+
   Dir['*'].each do |file|
     next if %w[Rakefile README.rdoc LICENSE oh-my-zsh vim].include? file
 
