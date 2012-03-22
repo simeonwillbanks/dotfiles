@@ -1,4 +1,7 @@
-export rvm_path="$HOME/Repositories/rvm"
+rvm_path="$HOME/Repositories/rvm"
+if [[ -d $rvm_path ]]; then
+  export rvm_path=$rvm_path
+fi
 export VISUAL="/usr/bin/vim"
 export EDITOR="/usr/bin/vim"
 
