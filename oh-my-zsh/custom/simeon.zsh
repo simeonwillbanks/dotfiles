@@ -2,6 +2,7 @@ export rvm_path="$HOME/Repositories/rvm"
 export VISUAL="/usr/bin/vim"
 export EDITOR="/usr/bin/vim"
 
+alias rake='noglob rake'
 alias mvim='nocorrect mvim'
 alias v='mvim .'
 alias gitx='nocorrect gitx'
