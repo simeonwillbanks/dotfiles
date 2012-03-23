@@ -37,4 +37,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:$HOME/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
 # Add rbenv init to your shell to enable shims and autocompletion
-eval "$(rbenv init -)"
+if [[ -d ~/.rbenv ]]; then
+  eval "$(rbenv init -)"
+fi
