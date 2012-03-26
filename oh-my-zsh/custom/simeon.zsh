@@ -1,6 +1,5 @@
-rvm_path="$HOME/Repositories/rvm"
-if [[ -d $rvm_path ]]; then
-  export rvm_path=$rvm_path
+if [[ -d "$HOME/Repositories/rvm" ]]; then
+  export rvm_path="$HOME/Repositories/rvm"
 fi
 export VISUAL="/usr/bin/vim"
 export EDITOR="/usr/bin/vim"
