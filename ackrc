@@ -1,0 +1,15 @@
+# Add haml
+--type-set=haml=.haml
+
+# Add CoffeeScript
+--type-set=coffeescript=.coffee
+
+# Add Cucumber
+--type-set=cucumber=.feature
+
+# For Rails
+--type-add=ruby=.haml,.feature
+--type-add=js=.coffee
+
+# Use "less -r" as my pager
+--pager=less -r
