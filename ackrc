@@ -7,9 +7,12 @@
 # Add Cucumber
 --type-set=cucumber=.feature
 
+# Add JSON
+--type-set=json=.json
+
 # For Rails
 --type-add=ruby=.haml,.feature
---type-add=js=.coffee
+--type-add=js=.coffee,.json
 
 # Use "less -r" as my pager
 --pager=less -r
