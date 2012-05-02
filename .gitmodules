@@ -1,3 +1,6 @@
 [submodule "janus/vim-rails"]
 	path = janus/vim-rails
 	url = git://github.com/tpope/vim-rails.git
+[submodule "janus/vim-numbertoggle"]
+	path = janus/vim-numbertoggle
+	url = git://github.com/jeffkreeftmeijer/vim-numbertoggle.git
