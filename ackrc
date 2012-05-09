@@ -1,3 +1,6 @@
+# Add log
+--type-set=log=.log
+
 # Add sass
 --type-set=sass=.scss
 
