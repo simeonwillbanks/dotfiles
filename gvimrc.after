@@ -2,3 +2,5 @@ colorscheme sunburst
 set   guifont=Monaco:h14
 set   antialias " if compiled w/ this feature
 
+set colorcolumn=80
+highlight ColorColumn ctermbg=lightgrey ctermfg=black guibg=#373943 guifg=white
