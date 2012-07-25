@@ -37,3 +37,5 @@
       excludesfile = ~/.gitignore_global
   [init]
       templatedir = ~/.git_template
+  [github]
+    user = sfw@simeonfosterwillbanks.com
