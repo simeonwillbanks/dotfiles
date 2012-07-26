@@ -26,3 +26,8 @@ alias myip='curl ifconfig.me'
 # https://github.com/robbyrussell/oh-my-zsh/issues/31
 # noglob Filename generation (globbing) is not performed on any of the words.
 alias curl='noglob curl'
+
+# Get github password from keychain
+alias githubpassword="security 2>&1 >/dev/null find-generic-password -gs github.password | sed 's/password: \"\(.*\)\"/\1/'"
+# Export ENV for gist cli
+export GITHUB_PASSWORD=`githubpassword`
