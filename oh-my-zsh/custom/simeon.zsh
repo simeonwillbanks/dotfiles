@@ -4,6 +4,12 @@ fi
 export VISUAL="/usr/bin/vim"
 export EDITOR="/usr/bin/vim"
 
+# Export ENV for gist cli
+export GITHUB_USER=sfw@simeonfosterwillbanks.com
+export GITHUB_PASSWORD=$(security 2>&1 >/dev/null find-generic-password -gs github.password | sed 's/password: "\(.*\)"/\1/')
+# Example of adding item to Keychain
+# security add-generic-password -a YOUR_LOCAL_OSX_USER -s github.password -w YOUR_GITHUB_PASSWORD
+
 alias rake='noglob rake'
 alias mvim='nocorrect mvim'
 alias tree='nocorrect tree'
@@ -26,6 +32,3 @@ alias myip='curl ifconfig.me'
 # https://github.com/robbyrussell/oh-my-zsh/issues/31
 # noglob Filename generation (globbing) is not performed on any of the words.
 alias curl='noglob curl'
-
-# Export ENV for gist cli
-export GITHUB_PASSWORD=$(security 2>&1 >/dev/null find-generic-password -gs github.password | sed 's/password: "\(.*\)"/\1/')
