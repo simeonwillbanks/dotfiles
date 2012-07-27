@@ -32,3 +32,7 @@ alias myip='curl ifconfig.me'
 # https://github.com/robbyrussell/oh-my-zsh/issues/31
 # noglob Filename generation (globbing) is not performed on any of the words.
 alias curl='noglob curl'
+
+# Gist cli shortcuts for diffs
+function gistd() { g diff | gist -po -tdiff -d"$1" }
+function gistdf() { g diff -- "$1" | gist -po -tdiff -d"$2" }
