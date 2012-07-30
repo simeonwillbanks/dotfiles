@@ -3,3 +3,5 @@ alias workopen="mvim $HOME/Sites/lessonplanet"
 alias gupd="git fetch origin && git rebase origin/development"
 alias gird="git rebase -i origin/development"
 alias migrations\?="git diff --name-only master development | ack migrate"
+
+export LP_CODE_ROOT_PATH=/Users/simeon/Sites
