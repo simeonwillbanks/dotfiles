@@ -10,6 +10,8 @@ export GITHUB_PASSWORD=$(security 2>&1 >/dev/null find-generic-password -gs gith
 # Example of adding item to Keychain
 # security add-generic-password -a YOUR_LOCAL_OSX_USER -s github.password -w YOUR_GITHUB_PASSWORD
 
+alias tm='top -o rsize'
+alias tu='top -o cpu'
 alias rake='noglob rake'
 alias mvim='nocorrect mvim'
 alias tree='nocorrect tree'
