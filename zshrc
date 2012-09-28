@@ -51,3 +51,4 @@ if [[ -a /etc/zshenv ]]; then
   sudo mv /etc/zshenv /etc/zprofile
 fi
 
+. $HOME/.jump_around/z.sh
