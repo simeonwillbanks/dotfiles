@@ -4,3 +4,6 @@
 [submodule "janus/vim-numbertoggle"]
 	path = janus/vim-numbertoggle
 	url = git://github.com/jeffkreeftmeijer/vim-numbertoggle.git
+[submodule "jump_around"]
+	path = jump_around
+	url = git://github.com/rupa/z.git
