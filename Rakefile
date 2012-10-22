@@ -7,7 +7,7 @@ task :install, [:replace_all] do |t, args|
   replace_all = args.replace_all == "true" ? true : false
 
   Dir['*'].each do |file|
-    next if %w[Rakefile README.rdoc LICENSE oh-my-zsh vim].include? file
+    next if %w[Rakefile README.rdoc LICENSE oh-my-zsh vim ssh].include? file
 
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
       if File.identical? file, File.join(ENV['HOME'], ".#{file.sub('.erb', '')}")
@@ -52,6 +52,10 @@ task :install, [:replace_all] do |t, args|
   Dir['oh-my-zsh/themes/*'].each do |file|
     link_file(file)
   end
+
+  # ssh config
+  # link ssh/config into ~/.ssh/config
+  link_file('ssh/config')
 
 end
 
