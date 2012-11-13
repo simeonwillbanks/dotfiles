@@ -46,3 +46,5 @@ alias curl='noglob curl'
 # Gist cli shortcuts for diffs
 function gistd() { g diff | gist -po -tdiff -d"$1" }
 function gistdf() { g diff -- "$1" | gist -po -tdiff -d"$2" }
+
+function bers() { bundle exec rake spec SPEC="$1" }
