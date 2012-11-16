@@ -48,3 +48,4 @@ function gistd() { g diff | gist -po -tdiff -d"$1" }
 function gistdf() { g diff -- "$1" | gist -po -tdiff -d"$2" }
 
 function bers() { bundle exec rake spec SPEC="$1" }
+function zs() { zeus rspec $1 }
