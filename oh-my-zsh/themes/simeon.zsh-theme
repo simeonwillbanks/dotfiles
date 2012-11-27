@@ -98,5 +98,5 @@ function simeon_precmd {
 add-zsh-hook precmd simeon_precmd
 
 PROMPT=$'
-%{$blue%}%n%{$reset_color%} at %{$gray%}%m%{$reset_color%} in %{$limegreen%}%~%{$reset_color%} $vcs_info_msg_0_
+%{$blue%}%n%{$reset_color%}@%{$gray%}%m%{$reset_color%} %{$limegreen%}%~%{$reset_color%} $vcs_info_msg_0_
 $(virtualenv_info)$ '
