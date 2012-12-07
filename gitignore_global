@@ -42,3 +42,7 @@ Thumbs.db
 ######################
 .rbenv-version
 
+# ctags files #
+######################
+TAGS
+
