@@ -1,7 +1,8 @@
 colorscheme default
 
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
-map <Leader>z :ConqueTerm zsh <Return>
+map <Leader>z :call conque_term#open('zsh', ['botright split', 'resize 20'])<CR>
+command Z :exec ":botright split | b zsh"
 imap jk <Esc>
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <C-[> yt :stj <C-r>0<CR>
