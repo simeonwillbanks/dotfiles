@@ -51,4 +51,5 @@ function gistdf() { g diff -- "$1" | gist -po -tdiff -d"$2" }
 # RSpec shortcuts
 function bers() { bundle exec rake spec SPEC="$1" }
 function ber() { bundle exec rspec $1 }
-function zr() { zeus rspec $1 }
+unalias zs # set by zeus plugin
+function zs() { zeus rspec $1 }
