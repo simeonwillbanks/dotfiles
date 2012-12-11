@@ -33,10 +33,6 @@ plugins=(vi-mode brew bundler cap gem git git-flow github heroku history-substri
 
 source $ZSH/oh-my-zsh.sh
 
-# Remove after this pull request is closed
-# https://github.com/robbyrussell/oh-my-zsh/pull/1126#issuecomment-5881174
-for config_file ($ZSH_CUSTOM/*.zsh(N)) source $config_file
-
 # Customize to your needs...
 export PATH=/usr/local/bin:$HOME/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
