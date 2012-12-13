@@ -1,8 +1,8 @@
 if [[ -d "$HOME/Repositories/rvm" ]]; then
   export rvm_path="$HOME/Repositories/rvm"
 fi
-export VISUAL="/usr/bin/vim"
-export EDITOR="/usr/bin/vim"
+export VISUAL="/usr/local/bin/mvim"
+export EDITOR="/usr/local/bin/mvim"
 
 # Faster ruby
 # @see https://gist.github.com/1688857
