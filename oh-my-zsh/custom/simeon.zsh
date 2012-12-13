@@ -32,6 +32,10 @@ alias pgsp='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias mysqlsp="mysql.server stop"
 alias mysqlst="mysql.server start"
 
+# gem readme
+alias gemr='gem readme -e cat'
+function gemro() { gemr $1 | marked > ~/Documentation/$1.html && open ~/Documentation/$1.html }
+
 # aliases.zsh
 alias afind="ack --color -i"
 
