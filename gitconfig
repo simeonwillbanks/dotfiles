@@ -35,5 +35,6 @@
       ctags = ! .git/hooks/ctags
   [core]
       excludesfile = ~/.gitignore_global
+      editor = vim
   [init]
       templatedir = ~/.git_template
