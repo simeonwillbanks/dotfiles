@@ -48,3 +48,8 @@ if [[ -a /etc/zshenv ]]; then
 fi
 
 . $HOME/.jump_around/z.sh
+
+# hub exists and is executable by current process
+if [[ -x /usr/local/bin/hub ]]; then
+  eval "$(hub alias -s)"
+fi
