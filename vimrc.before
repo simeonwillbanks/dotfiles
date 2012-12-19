@@ -1,2 +1,2 @@
 let mapleader = ","
-set tags+=TAGS,.git/tags
+set tags+=APP_TAGS,.git/tags,GEMS_TAGS,TAGS
