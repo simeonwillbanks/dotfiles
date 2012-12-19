@@ -31,7 +31,18 @@ ZSH_THEME="simeon"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(zeus brew bundler cap gem git github heroku history-substring-search osx rails3 redis-cli ruby)
 
+# TODO why does adding homebrew zsh functions path to $fpath cause git autocomplete errors?
+#
+# set fpath if necessary for homebrew installation
+# @see https://github.com/joelthelion/autojump/blob/f0e45478a7344121ae32963ccc155d5bf2ccd0c7/bin/autojump.zsh#L21-L24
+#command -v brew &>/dev/null \
+#    && [[ -d "`brew --prefix`/share/zsh/site-functions" ]] \
+#    && fpath=(`brew --prefix`/share/zsh/site-functions ${fpath})
+
 source $ZSH/oh-my-zsh.sh
+
+# For now, lets just source the homebrew zsh completion scripts
+source `brew --prefix`/share/zsh/site-functions/*
 
 # Customize to your needs...
 export PATH=/usr/local/bin:$HOME/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
