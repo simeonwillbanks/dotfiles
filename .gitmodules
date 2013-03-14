@@ -7,3 +7,12 @@
 [submodule "jump_around"]
 	path = jump_around
 	url = git://github.com/rupa/z.git
+[submodule "janus/screen"]
+	path = janus/screen
+	url = git://github.com/ervandew/screen
+[submodule "janus/vim-tomdoc"]
+	path = janus/vim-tomdoc
+	url = git://github.com/jc00ke/vim-tomdoc.git
+[submodule "janus/tomdoc.vim"]
+	path = janus/tomdoc.vim
+	url = git://github.com/duwanis/tomdoc.vim.git
