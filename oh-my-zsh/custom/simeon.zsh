@@ -57,3 +57,8 @@ function bers() { bundle exec rake spec SPEC="$1" }
 function ber() { bundle exec rspec $1 }
 unalias zs # set by zeus plugin
 function zs() { zeus rspec $1 }
+
+# Generate migration and copy file to clipboard
+function zgm() {
+  zeus generate migration $1 | ruby -e 'print STDIN.read.scan(/db\/migrate.*/)[0]' | pbcopy
+}
