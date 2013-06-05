@@ -16,3 +16,6 @@
 [submodule "janus/tomdoc.vim"]
 	path = janus/tomdoc.vim
 	url = git://github.com/duwanis/tomdoc.vim.git
+[submodule "janus/javascript-libraries-syntax"]
+	path = janus/javascript-libraries-syntax
+	url = git://github.com/othree/javascript-libraries-syntax.vim
