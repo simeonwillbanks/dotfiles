@@ -1,4 +1,6 @@
-colorscheme sunburst
+set background=dark
+colorscheme solarized
+
 set   guifont=Monaco:h14
 set   antialias " if compiled w/ this feature
 
