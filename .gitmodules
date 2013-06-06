@@ -19,3 +19,9 @@
 [submodule "janus/javascript-libraries-syntax"]
 	path = janus/javascript-libraries-syntax
 	url = git://github.com/othree/javascript-libraries-syntax.vim
+[submodule "janus/zencoding-vim"]
+	path = janus/zencoding-vim
+	url = git://github.com/mattn/zencoding-vim.git
+[submodule "janus/bootstrap-snippets"]
+	path = janus/bootstrap-snippets
+	url = git://github.com/bonsaiben/bootstrap-snippets.git
