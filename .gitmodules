@@ -25,3 +25,12 @@
 [submodule "janus/bootstrap-snippets"]
 	path = janus/bootstrap-snippets
 	url = git://github.com/bonsaiben/bootstrap-snippets.git
+[submodule "janus/angular-vim-ultisnips/snippets"]
+	path = janus/angular-vim-ultisnips/snippets
+	url = git://github.com/matthewsimo/angular-vim-ultisnips.git
+[submodule "janus/tomorrow-theme"]
+	path = janus/tomorrow-theme
+	url = git@github.com:chriskempson/tomorrow-theme.git
+[submodule "zsh/pure"]
+	path = zsh/pure
+	url = git@github.com:sindresorhus/pure.git

@@ -1,7 +1,7 @@
 set background=dark
-colorscheme solarized
+colorscheme tomorrow-night
 
-set   guifont=Monaco:h14
+set   guifont=Droid\ Sans\ Mono:h16
 set   antialias " if compiled w/ this feature
 
 set colorcolumn=80

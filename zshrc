@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="simeon"
+ZSH_THEME="pure"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -42,7 +42,7 @@ plugins=(zeus brew bundler cap gem git github heroku history-substring-search os
 source $ZSH/oh-my-zsh.sh
 
 # For now, lets just source the homebrew zsh completion scripts
-source `brew --prefix`/share/zsh/site-functions/*
+#source `brew --prefix`/share/zsh/site-functions/*
 
 # Customize to your needs...
 export PATH=/usr/local/bin:$HOME/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
