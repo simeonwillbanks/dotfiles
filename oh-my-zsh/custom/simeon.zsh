@@ -62,3 +62,6 @@ function zs() { zeus rspec $1 }
 function zgm() {
   zeus generate migration $1 | ruby -e 'print STDIN.read.scan(/db\/migrate.*/)[0]' | pbcopy
 }
+
+unalias bi # set by bundler plugin
+alias bi='bundle install; bower install'
