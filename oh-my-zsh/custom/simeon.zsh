@@ -18,6 +18,9 @@ export GITHUB_PASSWORD=$(security 2>&1 >/dev/null find-generic-password -gs gith
 # Example of adding item to Keychain
 # security add-generic-password -a YOUR_LOCAL_OSX_USER -s github.password -w YOUR_GITHUB_PASSWORD
 
+# The GOPATH environment variable lists places to look for Go code
+export GOPATH="$HOME/Projects/gocode"
+
 alias rit='ri -T'
 alias tm='top -o rsize'
 alias tu='top -o cpu'

@@ -45,7 +45,7 @@ source $ZSH/oh-my-zsh.sh
 #source `brew --prefix`/share/zsh/site-functions/*
 
 # Customize to your needs...
-export PATH=/usr/local/bin:$HOME/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export PATH=/usr/local/bin:$HOME/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$GOPATH/bin
 
 # Add rbenv init to your shell to enable shims and autocompletion
 if [[ -d ~/.rbenv ]]; then
