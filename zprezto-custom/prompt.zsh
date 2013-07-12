@@ -5,7 +5,7 @@
 
 
 # Change this to your own username
-DEFAULT_USERNAME='simeon'
+DEFAULT_USERNAME='sindresorhus'
 
 # Threshold (sec) for showing cmd exec time
 CMD_MAX_EXEC_TIME=5
