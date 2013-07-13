@@ -31,3 +31,6 @@
 [submodule "zsh/pure"]
 	path = zsh/pure
 	url = git@github.com:sindresorhus/pure.git
+[submodule "zprezto.after/better_zeus"]
+	path = zprezto.after/better_zeus
+	url = git@github.com:abull/better_zeus.git
