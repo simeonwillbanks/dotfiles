@@ -33,7 +33,8 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'fasd' \
-  'prompt'
+  'prompt' \
+  'git'
 
 #
 # Editor
@@ -50,7 +51,9 @@ zstyle ':prezto:module:editor' dot-expansion 'yes'
 #
 
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
-# zstyle ':prezto:module:git:status:ignore' submodules 'all'
+zstyle ':prezto:module:git:status:ignore' submodules 'all'
+# Format git-log where context is brief, oneline, or medium
+zstyle ':prezto:module:git:log:context' format 'medium'
 
 #
 # GNU Utility
