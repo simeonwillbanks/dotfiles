@@ -67,6 +67,7 @@ function zgm() {
   zeus generate migration $1 | ruby -e 'print STDIN.read.scan(/db\/migrate.*/)[0]' | pbcopy
 }
 
+alias be='bundle exec'
 alias bi='bundle install; bower install'
 
 # Add X11 to end of path
