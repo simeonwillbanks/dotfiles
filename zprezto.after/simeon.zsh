@@ -68,3 +68,9 @@ function zgm() {
 }
 
 alias bi='bundle install; bower install'
+
+# Add X11 to end of path
+path=($path "/user/X11/bin")
+
+# Add golang to beginning path
+path=("$GOPATH/bin" $path)
