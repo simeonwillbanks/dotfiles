@@ -34,7 +34,7 @@ alias pgst='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.
 alias pgsp='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias mysqlsp="mysql.server stop"
 alias mysqlst="mysql.server start"
-alias gcm="git checkout master"
+alias gcom="git checkout master"
 
 # gem readme
 alias gemr='gem readme -e cat'
