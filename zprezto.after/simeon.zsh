@@ -75,3 +75,6 @@ path=($path "/user/X11/bin")
 
 # Add golang to beginning path
 path=("$GOPATH/bin" $path)
+
+# Add heroku tookbelt
+path=("/usr/local/heroku/bin" $path)
