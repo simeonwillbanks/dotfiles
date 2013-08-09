@@ -34,3 +34,6 @@
 [submodule "zprezto.after/better_zeus"]
 	path = zprezto.after/better_zeus
 	url = git@github.com:abull/better_zeus.git
+[submodule "janus/angular-vim-snippets"]
+	path = janus/angular-vim-snippets
+	url = git@github.com:matthewsimo/angular-vim-snippets.git
