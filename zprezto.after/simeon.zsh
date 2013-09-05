@@ -3,6 +3,9 @@ if [[ -d "$HOME/Repositories/rvm" ]]; then
 fi
 export VISUAL="/usr/local/bin/mvim"
 export EDITOR="/usr/local/bin/mvim"
+# @see http://stackoverflow.com/a/17279810/177524
+# @see https://www.ruby-forum.com/topic/4413311
+export NOKOGIRI_USE_SYSTEM_LIBRARIES=1
 
 # Faster ruby
 # @see https://gist.github.com/1688857
