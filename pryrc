@@ -1,5 +1,8 @@
-require "awesome_print"
-AwesomePrint.pry!
+begin
+  require "awesome_print"
+  AwesomePrint.pry!
+rescue LoadError
+end
 
 Pry.commands.alias_command 'c', 'continue'
 Pry.commands.alias_command 's', 'step'
