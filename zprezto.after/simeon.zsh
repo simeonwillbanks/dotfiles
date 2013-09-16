@@ -43,6 +43,9 @@ alias gcom="git checkout master"
 alias gemr='gem readme -e cat'
 function gemro() { gemr $1 | marked > ~/Documentation/$1.html && open ~/Documentation/$1.html }
 
+# generate bundled gem ri documentation
+begd='bundle exec gem rdoc --all --overwrite --ri'
+
 # aliases.zsh
 alias afind="ack --color -i"
 
