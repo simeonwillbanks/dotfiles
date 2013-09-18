@@ -1,0 +1,6 @@
+# http://guides.rubygems.org/command-reference/#gem_environment
+---
+install: --ri --rdoc  # gem install with docs
+update: --ri --rdoc   # gem update with docs
+verbose: true         # Verbosity of the gem command
+backtrace: true       # Print backtrace when RubyGems encounters an error
