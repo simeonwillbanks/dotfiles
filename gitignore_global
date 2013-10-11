@@ -1,6 +1,7 @@
 # VIM #
 ############
 *.swp
+*.swo
 
 # TextMate #
 ############
@@ -49,4 +50,3 @@ Thumbs.db
 # ctags files #
 ######################
 TAGS
-
