@@ -78,6 +78,7 @@ function zgm() {
 
 alias be='bundle exec'
 alias bi='bundle install; bower install'
+function bo() { cd `bundle show $1` }
 
 # Add X11 to end of path
 path=($path "/user/X11/bin")
