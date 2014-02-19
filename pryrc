@@ -1,4 +1,10 @@
 begin
+  require "jazz_hands"
+  JazzHands.prompt_separator = "❯"
+rescue LoadError
+end
+
+begin
   require "awesome_print"
   AwesomePrint.pry!
 rescue LoadError
