@@ -33,6 +33,8 @@
       cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
       next = !git add . && git rebase --continue
       ctags = ! .git/hooks/ctags
+      ta  = !sh -c 'ref="$(git symbolic-ref HEAD 2> /dev/null | cut -b 12-)" && git push -u origin $ref:throwaway-$ref-$(date +"%s")'
+      tac = !sh -c 'ref="$(git symbolic-ref HEAD 2> /dev/null | cut -b 12-)" && git fetch && git branch -r --list origin/throwaway-$ref* | cut -b 10- | xargs -I% git push -u origin :%'
   [core]
       excludesfile = ~/.gitignore_global
       editor = vim
