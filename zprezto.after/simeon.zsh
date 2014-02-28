@@ -88,3 +88,7 @@ path=("$GOPATH/bin" $path)
 
 # Add heroku tookbelt
 path=("/usr/local/heroku/bin" $path)
+
+# https://github.com/rupa/z
+. `brew --prefix`/etc/profile.d/z.sh
+alias j='z'
