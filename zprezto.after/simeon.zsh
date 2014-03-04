@@ -22,9 +22,6 @@ export GITHUB_PASSWORD=$(security 2>&1 >/dev/null find-generic-password -gs gith
 # Example of adding item to Keychain
 # security add-generic-password -a YOUR_LOCAL_OSX_USER -s github.password -w YOUR_GITHUB_PASSWORD
 
-# The GOPATH environment variable lists places to look for Go code
-export GOPATH="$HOME/Projects/gocode"
-
 alias rit='ri -T'
 alias tm='top -o rsize'
 alias tu='top -o cpu'
@@ -84,12 +81,13 @@ function bo() { cd `bundle show $1` }
 # Add X11 to end of path
 path=($path "/user/X11/bin")
 
-# Add golang to beginning path
-path=("$GOPATH/bin" $path)
-
 # Add heroku tookbelt
 path=("/usr/local/heroku/bin" $path)
 
 # https://github.com/rupa/z
 . `brew --prefix`/etc/profile.d/z.sh
 alias j='z'
+
+export PATH="$HOME/.goenv/bin:$PATH"
+export GOPATH="$HOME/.goenv"
+eval "$(goenv init -)"
