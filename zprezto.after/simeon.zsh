@@ -88,6 +88,6 @@ path=("/usr/local/heroku/bin" $path)
 . `brew --prefix`/etc/profile.d/z.sh
 alias j='z'
 
-export PATH="$HOME/.goenv/bin:$PATH"
-export GOPATH="$HOME/.goenv"
+export GOPATH="$HOME/Projects/gocode"
+export PATH="$HOME/.goenv/bin:$GOPATH/bin:$PATH"
 eval "$(goenv init -)"
