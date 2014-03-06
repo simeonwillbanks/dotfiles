@@ -39,6 +39,7 @@ alias mysqlst="mysql.server start"
 alias gcom="git checkout master"
 alias k9="kill -9"
 alias reload="exec $SHELL"
+alias gg="git grep --break --heading --line-number"
 
 # gem readme
 alias gemr='gem readme -e cat'
