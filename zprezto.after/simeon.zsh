@@ -89,6 +89,35 @@ path=("/usr/local/heroku/bin" $path)
 . `brew --prefix`/etc/profile.d/z.sh
 alias j='z'
 
-export GOPATH="$HOME/Projects/gocode"
-export PATH="$HOME/.goenv/bin:$GOPATH/bin:$PATH"
+# https://github.com/wfarr/goenv
+export PATH="$HOME/.goenv/bin:$PATH"
 eval "$(goenv init -)"
+
+# GOPATHROOT keyed by Go version
+export GOPATHROOT="$HOME/Projects/gocode/$(goenv version)"
+
+# A GOPATH for each Go version with path for 3rd party packages and my own
+# https://code.google.com/p/go-wiki/wiki/GOPATH#Third-party_Packages
+export GOPATH="$GOPATHROOT/theirs:$GOPATHROOT/ours"
+
+# Prepend 3rd party packages' path before my own packages' path
+export PATH="$GOPATH/theirs/bin:$GOPATH/ours/bin:$PATH"
+
+function gopathreload {
+  export GOPATHROOT="$HOME/Projects/gocode/$(goenv version)"
+  export GOPATH="$GOPATHROOT/theirs:$GOPATHROOT/ours"
+  export PATH="$GOPATH/theirs/bin:$GOPATH/ours/bin:$PATH"
+}
+
+# Initialize GOPATH workspaces
+function gopathinit {
+  workspaces=(theirs ours);
+  dirs=(bin pkg src);
+  for workspace in $workspaces;
+  do
+    for dir in $dirs;
+    do
+      mkdir -p "$GOPATHROOT/$workspace/$dir"
+    done
+  done
+}
