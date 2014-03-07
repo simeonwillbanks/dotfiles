@@ -93,31 +93,18 @@ alias j='z'
 export PATH="$HOME/.goenv/bin:$PATH"
 eval "$(goenv init -)"
 
-# GOPATHROOT keyed by Go version
-export GOPATHROOT="$HOME/Projects/gocode/$(goenv version)"
-
-# A GOPATH for each Go version with path for 3rd party packages and my own
-# https://code.google.com/p/go-wiki/wiki/GOPATH#Third-party_Packages
-export GOPATH="$GOPATHROOT/theirs:$GOPATHROOT/ours"
-
-# Prepend 3rd party packages' path before my own packages' path
-export PATH="$GOPATH/theirs/bin:$GOPATH/ours/bin:$PATH"
-
-function gopathreload {
-  export GOPATHROOT="$HOME/Projects/gocode/$(goenv version)"
-  export GOPATH="$GOPATHROOT/theirs:$GOPATHROOT/ours"
-  export PATH="$GOPATH/theirs/bin:$GOPATH/ours/bin:$PATH"
+function gopathset {
+  # GOPATH for current Go version
+  export GOPATH="$HOME/Projects/gocode/$(goenv version)"
+  export PATH="$GOPATH/bin:$PATH"
 }
+gopathset
 
-# Initialize GOPATH workspaces
-function gopathinit {
-  workspaces=(theirs ours);
+# Initialize Go workspace for current Go version
+function goworkspaceinit {
   dirs=(bin pkg src);
-  for workspace in $workspaces;
+  for dir in $dirs;
   do
-    for dir in $dirs;
-    do
-      mkdir -p "$GOPATHROOT/$workspace/$dir"
-    done
+    mkdir -p "$GOPATH/$dir"
   done
 }
