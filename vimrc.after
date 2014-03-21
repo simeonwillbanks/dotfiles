@@ -1,4 +1,10 @@
-colorscheme default
+set background=dark
+colorscheme base16-tomorrow
+set term=screen-256color
+let base16colorspace=256
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=lightgrey ctermfg=black guibg=#373943 guifg=white
 
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 map <Leader>z :call conque_term#open('zsh', ['botright split', 'resize 20'])<CR>

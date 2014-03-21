@@ -1,3 +1,8 @@
+# Base16 Shell
+BASE16_SCHEME="base16-tomorrow"
+BASE16_SHELL="$HOME/.base16-shell/base16-$BASE16_SCHEME.dark.sh"
+[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
+
 if [[ -d "$HOME/Repositories/rvm" ]]; then
   export rvm_path="$HOME/Repositories/rvm"
 fi
@@ -22,6 +27,7 @@ export GITHUB_PASSWORD=$(security 2>&1 >/dev/null find-generic-password -gs gith
 # Example of adding item to Keychain
 # security add-generic-password -a YOUR_LOCAL_OSX_USER -s github.password -w YOUR_GITHUB_PASSWORD
 
+alias tmux='TERM=screen-256color tmux'
 alias rit='ri -T'
 alias tm='top -o rsize'
 alias tu='top -o cpu'
@@ -108,3 +114,4 @@ function goworkspaceinit {
     mkdir -p "$GOPATH/$dir"
   done
 }
+

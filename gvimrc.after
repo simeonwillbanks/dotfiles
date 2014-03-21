@@ -1,7 +1,11 @@
 set background=dark
-colorscheme tomorrow-night
+colorscheme base16-tomorrow
+let base16colorspace=256
 
-set   guifont=Droid\ Sans\ Mono:h16
+set colorcolumn=80
+highlight ColorColumn ctermbg=lightgrey ctermfg=black guibg=#373943 guifg=white
+
+set   guifont=Droid\ Sans\ Mono:h20
 set   antialias " if compiled w/ this feature
 
 set colorcolumn=80

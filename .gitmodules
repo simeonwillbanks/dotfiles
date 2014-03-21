@@ -37,3 +37,9 @@
 [submodule "janus/angular-vim-snippets"]
 	path = janus/angular-vim-snippets
 	url = git@github.com:matthewsimo/angular-vim-snippets.git
+[submodule "base16-shell"]
+	path = base16-shell
+	url = git@github.com:chriskempson/base16-shell.git
+[submodule "janus/base16-vim"]
+	path = janus/base16-vim
+	url = git@github.com:chriskempson/base16-vim.git
