@@ -17,8 +17,8 @@ map <Leader>z :call conque_term#open('zsh', ['botright split', 'resize 20'])<CR>
 command Z :exec ":botright split | b zsh"
 imap jk <Esc>
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-let @b='Obinding.pryjk'
-let @d='Odebuggerjk'
+map <Leader>z Obinding.pry<Esc>
+map <Leader>d Odebugger<Esc>
 
 autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
 autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
