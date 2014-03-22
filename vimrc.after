@@ -15,7 +15,6 @@ nnoremap <Leader>l :vertical resize +5<cr>
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 map <Leader>z :call conque_term#open('zsh', ['botright split', 'resize 20'])<CR>
 command Z :exec ":botright split | b zsh"
-imap jk <Esc>
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <Leader>z Obinding.pry<Esc>
 map <Leader>d Odebugger<Esc>
