@@ -4,9 +4,6 @@
 [submodule "janus/vim-numbertoggle"]
 	path = janus/vim-numbertoggle
 	url = git://github.com/jeffkreeftmeijer/vim-numbertoggle.git
-[submodule "janus/screen"]
-	path = janus/screen
-	url = git://github.com/ervandew/screen
 [submodule "janus/vim-tomdoc"]
 	path = janus/vim-tomdoc
 	url = git://github.com/jc00ke/vim-tomdoc.git
@@ -22,18 +19,9 @@
 [submodule "janus/bootstrap-snippets"]
 	path = janus/bootstrap-snippets
 	url = git://github.com/bonsaiben/bootstrap-snippets.git
-[submodule "janus/angular-vim-ultisnips/snippets"]
-	path = janus/angular-vim-ultisnips/snippets
-	url = git://github.com/matthewsimo/angular-vim-ultisnips.git
-[submodule "janus/tomorrow-theme"]
-	path = janus/tomorrow-theme
-	url = git@github.com:chriskempson/tomorrow-theme.git
 [submodule "zsh/pure"]
 	path = zsh/pure
 	url = git@github.com:sindresorhus/pure.git
-[submodule "zprezto.after/better_zeus"]
-	path = zprezto.after/better_zeus
-	url = git@github.com:abull/better_zeus.git
 [submodule "janus/angular-vim-snippets"]
 	path = janus/angular-vim-snippets
 	url = git@github.com:matthewsimo/angular-vim-snippets.git
