@@ -13,8 +13,6 @@ nnoremap <Leader>j :resize -5<cr>
 nnoremap <Leader>l :vertical resize +5<cr>
 
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
-map <Leader>z :call conque_term#open('zsh', ['botright split', 'resize 20'])<CR>
-command Z :exec ":botright split | b zsh"
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <Leader>z Obinding.pry<Esc>
 map <Leader>d Odebugger<Esc>
@@ -26,5 +24,4 @@ autocmd BufReadPre *.js let b:javascript_lib_use_backbone = 0
 autocmd BufReadPre *.js let b:javascript_lib_use_prelude = 0
 autocmd BufReadPre *.js let b:javascript_lib_use_requirejs = 0
 
-let g:ConqueTerm_TERM =  'xterm-256color'
 let g:ackprg = 'ag --nogroup --nocolor --column'
