@@ -46,15 +46,8 @@ alias k9="kill -9"
 alias reload="exec $SHELL"
 alias gg="git grep --break --heading --line-number"
 
-# gem readme
-alias gemr='gem readme -e cat'
-function gemro() { gemr $1 | marked > ~/Documentation/$1.html && open ~/Documentation/$1.html }
-
 # generate bundled gem ri documentation
 begd='bundle exec gem rdoc --all --overwrite --ri'
-
-# history-substring-search
-alias hsh='sed -n "2,/^$/s/^#//p" ~/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zsh | more'
 
 alias myip='curl ifconfig.me'
 
@@ -69,13 +62,6 @@ function gistdf() { g diff -- "$1" | gist -po -tdiff -d"$2" }
 # RSpec shortcuts
 function bers() { bundle exec rake spec SPEC="$1" }
 function ber() { bundle exec rspec $1 }
-unalias zs # set by zeus plugin
-function zs() { zeus rspec $1 }
-
-# Generate migration and copy file to clipboard
-function zgm() {
-  zeus generate migration $1 | ruby -e 'print STDIN.read.scan(/db\/migrate.*/)[0]' | pbcopy
-}
 
 alias be='bundle exec'
 alias bi='bundle install; bower install'
