@@ -6,6 +6,12 @@ let base16colorspace=256
 set colorcolumn=80
 highlight ColorColumn ctermbg=lightgrey ctermfg=black guibg=#373943 guifg=white
 
+" resize current buffer by +/- 5
+nnoremap <Leader>h :vertical resize -5<cr>
+nnoremap <Leader>k :resize +5<cr>
+nnoremap <Leader>j :resize -5<cr>
+nnoremap <Leader>l :vertical resize +5<cr>
+
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 map <Leader>z :call conque_term#open('zsh', ['botright split', 'resize 20'])<CR>
 command Z :exec ":botright split | b zsh"

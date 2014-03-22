@@ -7,7 +7,6 @@ set tags+=APP_TAGS,.git/tags,GEMS_TAGS,TAGS
 imap <C-J> <Plug>snipMateNextOrTrigger
 smap <C-J> <Plug>snipMateNextOrTrigger
 
-
 " https://github.com/zachgersh/dotfiles/blob/master/.vimrc#L40-L44
 " Auto addition / removal of Go packages
 let g:gofmt_command = "goimports"
