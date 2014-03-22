@@ -17,19 +17,8 @@
       old = red
       new = green
   [alias]
-      st = status
-      ci = commit
-      br = branch
-      co = checkout
-      df = diff
-      lg = log -p
-      who = shortlog -s --
-      up = !git fetch origin && git rebase origin/master
-      ir = !git rebase -i origin/master
-      lr = !git pull --rebase
       rmb = !sh -c 'git branch -D $1 && git push origin :$1' -
       cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
-      next = !git add . && git rebase --continue
       ctags = ! .git/hooks/ctags
       ta  = !sh -c 'ref="$(git symbolic-ref HEAD 2> /dev/null | cut -b 12-)" && git push origin $ref:throwaway-$ref-$(date +"%s")'
       tac = !sh -c 'ref="$(git symbolic-ref HEAD 2> /dev/null | cut -b 12-)" && git fetch && git branch -r --list origin/throwaway-$ref* | cut -b 10- | xargs -I% git push -u origin :%'
