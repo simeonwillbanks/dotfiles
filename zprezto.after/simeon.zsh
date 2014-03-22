@@ -54,9 +54,6 @@ function gemro() { gemr $1 | marked > ~/Documentation/$1.html && open ~/Document
 # generate bundled gem ri documentation
 begd='bundle exec gem rdoc --all --overwrite --ri'
 
-# aliases.zsh
-alias afind="ack --color -i"
-
 # history-substring-search
 alias hsh='sed -n "2,/^$/s/^#//p" ~/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zsh | more'
 
