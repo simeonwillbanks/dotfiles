@@ -11,6 +11,11 @@
       added = yellow
       changed = green
       untracked = cyan
+  [color "diff"]
+      meta = yellow
+      frag = magenta
+      old = red
+      new = green
   [alias]
       st = status
       ci = commit
