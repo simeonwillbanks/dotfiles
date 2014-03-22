@@ -6,8 +6,8 @@ BASE16_SHELL="$HOME/.base16-shell/base16-$BASE16_SCHEME.dark.sh"
 if [[ -d "$HOME/Repositories/rvm" ]]; then
   export rvm_path="$HOME/Repositories/rvm"
 fi
-export VISUAL="/usr/local/bin/mvim"
-export EDITOR="/usr/local/bin/mvim"
+export VISUAL="/usr/bin/vim"
+export EDITOR="/usr/bin/vim"
 # @see http://stackoverflow.com/a/17279810/177524
 # @see https://www.ruby-forum.com/topic/4413311
 export NOKOGIRI_USE_SYSTEM_LIBRARIES=1
@@ -33,9 +33,8 @@ alias tm='top -o rsize'
 alias tu='top -o cpu'
 alias rake='noglob rake'
 alias bundle='noglob bundle'
-alias mvim='nocorrect mvim'
 alias tree='nocorrect tree'
-alias v='mvim .'
+alias v='vim .'
 alias gitx='nocorrect gitx'
 alias ctagsg="ctags -R --exclude=.git --exclude=log *"
 alias pgst='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
