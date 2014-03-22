@@ -4,7 +4,7 @@ set term=screen-256color
 let base16colorspace=256
 
 set colorcolumn=80
-highlight ColorColumn ctermbg=lightgrey ctermfg=black guibg=#373943 guifg=white
+highlight ColorColumn ctermbg=235 ctermfg=white guibg=#373943 guifg=white
 
 " resize current buffer by +/- 5
 nnoremap <Leader>h :vertical resize -5<cr>
