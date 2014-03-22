@@ -21,12 +21,6 @@ export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=100000000
 export RUBY_HEAP_FREE_MIN=500000
 
-# Export ENV for gist cli
-export GITHUB_USER=sfw@simeonfosterwillbanks.com
-export GITHUB_PASSWORD=$(security 2>&1 >/dev/null find-generic-password -gs github.password | sed 's/password: "\(.*\)"/\1/')
-# Example of adding item to Keychain
-# security add-generic-password -a YOUR_LOCAL_OSX_USER -s github.password -w YOUR_GITHUB_PASSWORD
-
 alias tmux='TERM=screen-256color tmux'
 alias rit='ri -T'
 alias tm='top -o rsize'
