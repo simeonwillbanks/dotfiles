@@ -21,7 +21,6 @@ export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=100000000
 export RUBY_HEAP_FREE_MIN=500000
 
-alias tmux='TERM=screen-256color tmux'
 alias rit='ri -T'
 alias tm='top -o rsize'
 alias tu='top -o cpu'
