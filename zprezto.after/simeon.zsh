@@ -66,6 +66,10 @@ path=($path "/user/X11/bin")
 # Add heroku tookbelt
 path=("/usr/local/heroku/bin" $path)
 
+# rbenv
+path=($HOME/.rbenv/bin:$HOME/.rbenv/shims $path)
+eval "$(rbenv init -)"
+
 # https://github.com/rupa/z
 . `brew --prefix`/etc/profile.d/z.sh
 alias j='z'
