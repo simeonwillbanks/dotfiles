@@ -37,7 +37,7 @@ alias mysqlst="mysql.server start"
 alias gcom="git checkout master"
 alias k9="kill -9"
 alias reload="exec $SHELL"
-alias gg="git grep --break --heading --line-number"
+alias ggf="git grep --break --heading --line-number"
 
 # generate bundled gem ri documentation
 begd='bundle exec gem rdoc --all --overwrite --ri'
