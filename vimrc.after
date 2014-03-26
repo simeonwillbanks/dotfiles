@@ -35,5 +35,5 @@ function! RelativeNumberToggle()
     set relativenumber
   endif
 endfunc
-map <Leader>rr :call RelativeNumberToggle()<cr>
+map <Leader>r :call RelativeNumberToggle()<cr>
 set relativenumber
