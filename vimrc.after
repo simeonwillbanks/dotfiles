@@ -28,12 +28,4 @@ autocmd BufReadPre *.js let b:javascript_lib_use_requirejs = 0
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
-function! RelativeNumberToggle()
-  if (&relativenumber == 1)
-    set relativenumber! relativenumber?
-  else
-    set relativenumber
-  endif
-endfunc
-map <Leader>r :call RelativeNumberToggle()<cr>
 set relativenumber
