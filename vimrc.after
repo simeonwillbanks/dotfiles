@@ -7,10 +7,10 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=235 ctermfg=white
 
 " resize current buffer by +/- 5
-nnoremap <Left> :vertical resize -5<cr>
+nnoremap <Right> :vertical resize -5<cr>
 nnoremap <Down> :resize +5<cr>
 nnoremap <Up> :resize -5<cr>
-nnoremap <Right> :vertical resize +5<cr>
+nnoremap <Left> :vertical resize +5<cr>
 
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
