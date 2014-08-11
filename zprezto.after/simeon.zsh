@@ -64,30 +64,31 @@ path=($path "/user/X11/bin")
 path=("/usr/local/heroku/bin" $path)
 
 # rbenv
-path=($HOME/.rbenv/bin:$HOME/.rbenv/shims $path)
+#path=($HOME/.rbenv/bin:$HOME/.rbenv/shims $path)
+RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
 
 # https://github.com/rupa/z
 . `brew --prefix`/etc/profile.d/z.sh
 alias j='z'
 
-# https://github.com/wfarr/goenv
-export PATH="$HOME/.goenv/bin:$PATH"
-eval "$(goenv init -)"
+## https://github.com/wfarr/goenv
+#export PATH="$HOME/.goenv/bin:$PATH"
+#eval "$(goenv init -)"
 
-function gopathset {
-  # GOPATH for current Go version
-  export GOPATH="$HOME/Projects/gocode/$(goenv version)"
-  export PATH="$GOPATH/bin:$PATH"
-}
-gopathset
+#function gopathset {
+#  # GOPATH for current Go version
+#  export GOPATH="$HOME/Projects/gocode/$(goenv version)"
+#  export PATH="$GOPATH/bin:$PATH"
+#}
+#gopathset
 
-# Initialize Go workspace for current Go version
-function goworkspaceinit {
-  dirs=(bin pkg src);
-  for dir in $dirs;
-  do
-    mkdir -p "$GOPATH/$dir"
-  done
-}
+## Initialize Go workspace for current Go version
+#function goworkspaceinit {
+#  dirs=(bin pkg src);
+#  for dir in $dirs;
+#  do
+#    mkdir -p "$GOPATH/$dir"
+#  done
+#}
 
