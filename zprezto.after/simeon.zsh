@@ -5,9 +5,6 @@ BASE16_SHELL="$HOME/.base16-shell/base16-$BASE16_SCHEME.dark.sh"
 
 export VISUAL="/usr/bin/vim"
 export EDITOR="/usr/bin/vim"
-# @see http://stackoverflow.com/a/17279810/177524
-# @see https://www.ruby-forum.com/topic/4413311
-export NOKOGIRI_USE_SYSTEM_LIBRARIES=1
 
 # Faster ruby
 # @see https://gist.github.com/1688857
