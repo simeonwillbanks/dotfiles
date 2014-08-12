@@ -30,7 +30,7 @@ alias mysqlsp="mysql.server stop"
 alias mysqlst="mysql.server start"
 alias gcom="git checkout master"
 alias k9="kill -9"
-alias reload="exec $SHELL"
+alias reload="exec $SHELL; source ~/.zshrc"
 alias ggf="git grep --break --heading --line-number"
 
 # generate bundled gem ri documentation
