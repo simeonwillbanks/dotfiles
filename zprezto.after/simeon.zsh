@@ -65,7 +65,7 @@ path=("/usr/local/heroku/bin" $path)
 
 # rbenv
 #path=($HOME/.rbenv/bin:$HOME/.rbenv/shims $path)
-RBENV_ROOT=/usr/local/var/rbenv
+export RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
 
 # https://github.com/rupa/z
