@@ -36,7 +36,7 @@ alias ggf="git grep --break --heading --line-number"
 # generate bundled gem ri documentation
 begd='bundle exec gem rdoc --all --overwrite --ri'
 
-alias myip='curl ifconfig.me'
+alias myip='curl icanhazip.com'
 
 # https://github.com/robbyrussell/oh-my-zsh/issues/31
 # noglob Filename generation (globbing) is not performed on any of the words.
