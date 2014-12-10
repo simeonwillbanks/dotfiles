@@ -1,10 +1,13 @@
+# homebrew path
+path=("/usr/local/bin" $path)
+
 # Base16 Shell
 BASE16_SCHEME="base16-tomorrow"
 BASE16_SHELL="$HOME/.base16-shell/base16-$BASE16_SCHEME.dark.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 
-export VISUAL="/usr/bin/vim"
-export EDITOR="/usr/bin/vim"
+export VISUAL="/usr/local/bin/vim"
+export EDITOR="/usr/local/bin/vim"
 
 # Faster ruby
 # @see https://gist.github.com/1688857
