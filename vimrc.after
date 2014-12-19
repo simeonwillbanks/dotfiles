@@ -32,3 +32,10 @@ autocmd BufReadPre *.js let b:javascript_lib_use_requirejs = 0
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 set relativenumber
+
+"folding settings
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
+
