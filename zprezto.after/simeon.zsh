@@ -68,6 +68,10 @@ path=("/usr/local/heroku/bin" $path)
 export RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
 
+# project binstubs path
+# must come after rbenv init, so rbenv shims aren't before project binstubs
+path=("./bin" $path)
+
 # https://github.com/rupa/z
 . `brew --prefix`/etc/profile.d/z.sh
 alias j='z'
