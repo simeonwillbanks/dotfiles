@@ -26,7 +26,6 @@ alias bundle='noglob bundle'
 alias tree='nocorrect tree'
 alias v='vim .'
 alias gitx='nocorrect gitx'
-alias ctagsg="ctags -R --exclude=.git --exclude=log *"
 alias pgst='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgsp='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias mysqlsp="mysql.server stop"
@@ -44,6 +43,11 @@ alias myip='curl icanhazip.com'
 # https://github.com/robbyrussell/oh-my-zsh/issues/31
 # noglob Filename generation (globbing) is not performed on any of the words.
 alias curl='noglob curl'
+
+function ctagsg() {
+  rm -fr .git/tags
+  ctags --tag-relative -Rf.git/tags --exclude=bower_components --exclude=node_modules --exclude=.git --exclude=log --languages=-sql --languages=javascript,ruby
+}
 
 # Gist cli shortcuts for diffs
 function gistd() { g diff | gist -po -tdiff -d"$1" }
