@@ -11,6 +11,7 @@ nnoremap <Right> :vertical resize -5<cr>
 nnoremap <Up> :resize +5<cr>
 nnoremap <Down> :resize -5<cr>
 nnoremap <Left> :vertical resize +5<cr>
+nnoremap <silent> <F9> :TagbarToggle<CR>
 
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
