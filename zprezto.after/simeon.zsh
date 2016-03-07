@@ -34,6 +34,8 @@ alias gcom="git checkout master"
 alias k9="kill -9"
 alias reload="exec $SHELL; source ~/.zshrc"
 alias ggf="git grep --break --heading --line-number"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias s='subl .'
 
 # generate bundled gem ri documentation
 begd='bundle exec gem rdoc --all --overwrite --ri'
