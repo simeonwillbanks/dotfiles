@@ -9,15 +9,6 @@ BASE16_SHELL="$HOME/.base16-shell/base16-$BASE16_SCHEME.dark.sh"
 export VISUAL="/usr/local/bin/vim"
 export EDITOR="/usr/local/bin/vim"
 
-# Faster ruby
-# @see https://gist.github.com/1688857
-# TODO change to RUBY_GC_HEAP_INIT_SLOTS
-#export RUBY_HEAP_MIN_SLOTS=1000000
-export RUBY_HEAP_SLOTS_INCREMENT=1000000
-export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-export RUBY_GC_MALLOC_LIMIT=100000000
-export RUBY_HEAP_FREE_MIN=500000
-
 alias rit='ri -T'
 alias tm='top -o rsize'
 alias tu='top -o cpu'
@@ -81,24 +72,3 @@ path=("./bin" $path)
 # https://github.com/rupa/z
 . `brew --prefix`/etc/profile.d/z.sh
 alias j='z'
-
-## https://github.com/wfarr/goenv
-#export PATH="$HOME/.goenv/bin:$PATH"
-#eval "$(goenv init -)"
-
-#function gopathset {
-#  # GOPATH for current Go version
-#  export GOPATH="$HOME/Projects/gocode/$(goenv version)"
-#  export PATH="$GOPATH/bin:$PATH"
-#}
-#gopathset
-
-## Initialize Go workspace for current Go version
-#function goworkspaceinit {
-#  dirs=(bin pkg src);
-#  for dir in $dirs;
-#  do
-#    mkdir -p "$GOPATH/$dir"
-#  done
-#}
-

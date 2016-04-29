@@ -16,11 +16,6 @@
       frag = magenta
       old = red
       new = green
-  [alias]
-      rmb = !sh -c 'git branch -D $1 && git push origin :$1' -
-      cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
-      ta  = !sh -c 'ref="$(git symbolic-ref HEAD 2> /dev/null | cut -b 12-)" && git push origin $ref:throwaway-$ref-$(date +"%s")'
-      tac = !sh -c 'ref="$(git symbolic-ref HEAD 2> /dev/null | cut -b 12-)" && git fetch && git branch -r --list origin/throwaway-$ref* | cut -b 10- | xargs -I% git push -u origin :%'
   [core]
       excludesfile = ~/.gitignore_global
       editor = vim
