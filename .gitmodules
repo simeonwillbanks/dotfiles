@@ -1,18 +1,9 @@
 [submodule "janus/vim-rails"]
 	path = janus/vim-rails
 	url = git://github.com/tpope/vim-rails.git
-[submodule "janus/vim-tomdoc"]
-	path = janus/vim-tomdoc
-	url = git://github.com/jc00ke/vim-tomdoc.git
-[submodule "janus/tomdoc.vim"]
-	path = janus/tomdoc.vim
-	url = git://github.com/duwanis/tomdoc.vim.git
 [submodule "janus/javascript-libraries-syntax"]
 	path = janus/javascript-libraries-syntax
 	url = git://github.com/othree/javascript-libraries-syntax.vim
-[submodule "janus/zencoding-vim"]
-	path = janus/zencoding-vim
-	url = git://github.com/mattn/zencoding-vim.git
 [submodule "janus/bootstrap-snippets"]
 	path = janus/bootstrap-snippets
 	url = git://github.com/bonsaiben/bootstrap-snippets.git
