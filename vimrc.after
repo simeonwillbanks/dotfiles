@@ -31,6 +31,8 @@ autocmd BufReadPre *.js let b:javascript_lib_use_backbone = 0
 autocmd BufReadPre *.js let b:javascript_lib_use_prelude = 0
 autocmd BufReadPre *.js let b:javascript_lib_use_requirejs = 0
 
+let g:syntastic_javascript_checkers = ['eslint']
+
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 set relativenumber
