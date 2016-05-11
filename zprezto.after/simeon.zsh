@@ -6,8 +6,8 @@ BASE16_SCHEME="base16-tomorrow"
 BASE16_SHELL="$HOME/.base16-shell/base16-$BASE16_SCHEME.dark.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 
-export VISUAL="/usr/local/bin/vim"
-export EDITOR="/usr/local/bin/vim"
+export VISUAL="/usr/local/bin/mvim"
+export EDITOR="/usr/local/bin/mvim"
 
 alias rit='ri -T'
 alias tm='top -o rsize'
@@ -15,7 +15,7 @@ alias tu='top -o cpu'
 alias rake='noglob rake'
 alias bundle='noglob bundle'
 alias tree='nocorrect tree'
-alias v='vim .'
+alias v='mvim .'
 alias gitx='nocorrect gitx'
 alias pgst='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgsp='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
