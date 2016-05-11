@@ -38,7 +38,6 @@ zstyle ':prezto:load' pmodule \
   'rails' \
   'ruby' \
   'syntax-highlighting' \
-  'tmux' \
   'homebrew' \
   'history-substring-search'
 
@@ -158,7 +157,7 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-zstyle ':prezto:module:tmux:auto-start' local 'yes'
+#zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
