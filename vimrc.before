@@ -1,8 +1,2 @@
 let mapleader = ","
 set tags+=APP_TAGS,.git/tags,GEMS_TAGS,TAGS
-
-" Customize mappings snipMate uses to change the key that triggers
-" snippets and moves to the next tabstop.
-" Now <tab> can be used to autocomplete.
-imap <C-B> <Plug>snipMateNextOrTrigger
-smap <C-B> <Plug>snipMateNextOrTrigger
