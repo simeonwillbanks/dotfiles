@@ -55,6 +55,10 @@ alias be='bundle exec'
 alias bi='bundle install; bower install'
 function bo() { cd `bundle show $1` }
 
+# Sorry PP(1) User Contributed Perl Documentation
+# But I gotta Party!!!!
+function pp() { python ~/Code/partyparrot/partyparrot.py "$1" | pbcopy }
+
 # Add X11 to end of path
 path=($path "/user/X11/bin")
 
