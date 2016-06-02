@@ -22,3 +22,6 @@
 [submodule "janus/vim-jsx"]
 	path = janus/vim-jsx
 	url = https://github.com/mxw/vim-jsx
+[submodule "janus/vim-rbenv"]
+	path = janus/vim-rbenv
+	url = https://github.com/tpope/vim-rbenv
