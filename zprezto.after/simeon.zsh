@@ -77,3 +77,5 @@ path=("./bin" $path)
 # https://github.com/rupa/z
 . `brew --prefix`/etc/profile.d/z.sh
 alias j='z'
+
+export PSQL_EDITOR=/usr/local/bin/vim
