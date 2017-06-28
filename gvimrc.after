@@ -2,3 +2,6 @@ if has("gui_macvim")
   macmenu &File.New\ Window key=<nop>
   nmap <D-n> :NERDTreeToggle<CR> :NERDTreeMirror<CR>
 endif
+
+"don't show help ballons from any plugin
+set noballooneval
