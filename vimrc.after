@@ -2,7 +2,7 @@ set background=dark
 colorscheme base16-tomorrow
 set term=screen-256color
 let base16colorspace=256
-set guifont=Droid_Sans_Mono:h18
+set guifont=Droid_Sans_Mono:h20
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=235 ctermfg=white
