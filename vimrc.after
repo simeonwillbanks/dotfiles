@@ -6,6 +6,7 @@ set guifont=Droid_Sans_Mono:h20
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=235 ctermfg=white
+nnoremap <esc> :noh<return><esc>
 
 " resize current buffer by +/- 5
 nnoremap <Right> :vertical resize -5<cr>
