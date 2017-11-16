@@ -5,3 +5,6 @@ endif
 
 "don't show help ballons from any plugin
 set noballooneval
+
+"don't allow MacVim to show help ballons for netrm
+let g:netrw_nobeval = 1
