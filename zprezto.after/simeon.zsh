@@ -9,6 +9,8 @@ BASE16_SHELL="$HOME/.base16-shell/base16-$BASE16_SCHEME.dark.sh"
 export VISUAL="/usr/local/bin/mvim"
 export EDITOR="/usr/local/bin/mvim"
 
+export BROWSER=open
+
 alias rit='ri -T'
 alias tm='top -o rsize'
 alias tu='top -o cpu'
