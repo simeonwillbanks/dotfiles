@@ -1,5 +1,5 @@
 set background=dark
-colorscheme base16-tomorrow
+colorscheme base16-default-dark
 set term=screen-256color
 let base16colorspace=256
 set guifont=Droid_Sans_Mono:h20
