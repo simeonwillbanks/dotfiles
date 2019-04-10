@@ -28,8 +28,7 @@ alias gcom="git checkout master"
 alias k9="kill -9"
 alias reload="exec $SHELL; source ~/.zshrc"
 alias ggf="git grep --break --heading --line-number"
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-alias s='subl .'
+alias c='code .'
 
 # generate bundled gem ri documentation
 begd='bundle exec gem rdoc --all --overwrite --ri'
@@ -66,6 +65,9 @@ path=($path "/user/X11/bin")
 
 # Add heroku tookbelt
 path=("/usr/local/heroku/bin" $path)
+
+# vscode
+path=("/Applications/Visual Studio Code.app/Contents/Resources/app/bin" $path)
 
 # rbenv
 #path=($HOME/.rbenv/bin:$HOME/.rbenv/shims $path)
