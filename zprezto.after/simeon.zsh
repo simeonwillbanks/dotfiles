@@ -74,6 +74,10 @@ path=("/Applications/Visual Studio Code.app/Contents/Resources/app/bin" $path)
 export RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
 
+# nodenv
+eval "$(nodenv init -)"
+path=($HOME/.nodenv/shims $path)
+
 # project binstubs path
 # must come after rbenv init, so rbenv shims aren't before project binstubs
 path=("./bin" $path)
