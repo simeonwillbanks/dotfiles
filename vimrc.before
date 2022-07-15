@@ -1,2 +1,0 @@
-let mapleader = ","
-set tags+=APP_TAGS,.git/tags,GEMS_TAGS,TAGS
