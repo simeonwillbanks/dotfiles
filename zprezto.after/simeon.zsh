@@ -82,6 +82,9 @@ path=($HOME/.nodenv/shims $path)
 eval "$(pyenv init --path)"
 path=($HOME/.local/bin $path)
 
+# yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 # project binstubs path
 # must come after rbenv init, so rbenv shims aren't before project binstubs
 path=("./bin" $path)
