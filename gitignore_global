@@ -55,3 +55,7 @@ TAGS
 # golang #
 ######################
 .test
+
+# Python related files #
+######################
+.python-version
