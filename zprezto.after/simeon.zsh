@@ -78,6 +78,10 @@ eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 path=($HOME/.nodenv/shims $path)
 
+# pyenv
+eval "$(pyenv init --path)"
+path=($HOME/.local/bin $path)
+
 # project binstubs path
 # must come after rbenv init, so rbenv shims aren't before project binstubs
 path=("./bin" $path)
