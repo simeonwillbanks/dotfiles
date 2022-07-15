@@ -7,7 +7,7 @@ task :install, [:replace_all] do |t, args|
   replace_all = args.replace_all == "true" ? true : false
 
   Dir['*'].each do |file|
-    next if %w[Rakefile README.rdoc LICENSE oh-my-zsh vim ssh zsh].include? file
+    next if %w[Rakefile ssh].include? file
 
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
       if File.identical? file, File.join(ENV['HOME'], ".#{file.sub('.erb', '')}")
