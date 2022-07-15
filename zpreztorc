@@ -43,9 +43,11 @@ zstyle ':prezto:load' pmodule \
   'fasd' \
   'git' \
   'osx' \
+  'homebrew' \
   'rails' \
   'ruby' \
-  'homebrew' \
+  'python' \
+  'node' \
   'prompt'
 
 #
