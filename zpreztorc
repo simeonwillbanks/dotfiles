@@ -37,10 +37,10 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
-  'fasd' \
   'syntax-highlighting' \
   'completion' \
   'history-substring-search' \
+  'fasd' \
   'git' \
   'osx' \
   'rails' \
