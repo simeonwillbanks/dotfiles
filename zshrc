@@ -25,5 +25,8 @@ export PSQL_EDITOR=/usr/local/bin/vim
 # vscode
 path=("/Applications/Visual Studio Code.app/Contents/Resources/app/bin" $path)
 
+# local binstubs
+path=("./bin" $path)
+
 export PATH
 
