@@ -13,6 +13,7 @@ fi
 # Customize to your needs...
 alias k9="kill -9"
 alias c='code .'
+alias v='vim .'
 
 # ruby-build installs a non-Homebrew OpenSSL for each Ruby version installed and these are never upgraded.
 # To link Rubies to Homebrew's OpenSSL 1.1 (which is upgraded) add the following to your ~/.zshrc:
@@ -30,3 +31,4 @@ path=("./bin" $path)
 
 export PATH
 
+export PKG_CONFIG_PATH="/opt/homebrew/opt/imagemagick@6/lib/pkgconfig"
