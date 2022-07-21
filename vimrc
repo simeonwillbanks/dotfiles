@@ -80,4 +80,9 @@ let NERDTreeShowLineNumbers=1
 " make sure relative line numbers are used
 autocmd FileType nerdtree setlocal relativenumber
 
+" swap file locations
+set backupdir=/tmp//
+set directory=/tmp//
+set undodir=/tmp//
+
 colorscheme base16-default-dark
