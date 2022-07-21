@@ -60,3 +60,7 @@ TAGS
 # Python related files #
 ######################
 .python-version
+
+# Node related files #
+######################
+.node-version
