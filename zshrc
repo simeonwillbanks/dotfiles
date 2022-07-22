@@ -32,3 +32,5 @@ path=("./bin" $path)
 export PATH
 
 export PKG_CONFIG_PATH="/opt/homebrew/opt/imagemagick@6/lib/pkgconfig"
+
+source ~/.env
