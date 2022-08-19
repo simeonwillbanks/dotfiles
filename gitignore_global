@@ -64,3 +64,4 @@ TAGS
 # Node related files #
 ######################
 .node-version
+node_modules
