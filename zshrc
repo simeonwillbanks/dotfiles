@@ -29,6 +29,9 @@ path=("/Applications/Visual Studio Code.app/Contents/Resources/app/bin" $path)
 # local binstubs
 path=("./bin" $path)
 
+# user base for pipenv
+path=("$HOME/.local/bin" $path)
+
 export PATH
 
 export PKG_CONFIG_PATH="/opt/homebrew/opt/imagemagick@6/lib/pkgconfig"

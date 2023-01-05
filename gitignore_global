@@ -60,6 +60,7 @@ TAGS
 # Python related files #
 ######################
 .python-version
+__pycache__
 
 # Node related files #
 ######################
