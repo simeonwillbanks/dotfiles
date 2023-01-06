@@ -13,6 +13,11 @@ fi
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 eval "$(/opt/homebrew/bin/rbenv init - zsh)"
+eval "$(/opt/homebrew/bin/nodenv init -)"
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 
 # Customize to your needs...
 alias k9="kill -9"
