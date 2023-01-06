@@ -10,9 +10,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-eval "$(~/.rbenv/bin/rbenv init - zsh)"
-
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+eval "$(/opt/homebrew/bin/rbenv init - zsh)"
 
 # Customize to your needs...
 alias k9="kill -9"
