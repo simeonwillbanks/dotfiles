@@ -10,6 +10,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+eval "$(rbenv init - zsh)"
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Customize to your needs...
