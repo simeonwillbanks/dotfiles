@@ -5,12 +5,12 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Customize to your needs...
 alias k9="kill -9"
