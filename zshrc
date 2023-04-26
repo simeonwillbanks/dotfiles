@@ -24,6 +24,7 @@ alias k9="kill -9"
 alias c='code .'
 alias v='vim .'
 alias rspec='nocorrect rspec'
+export BROWSER=/usr/bin/open
 
 # ruby-build installs a non-Homebrew OpenSSL for each Ruby version installed and these are never upgraded.
 # To link Rubies to Homebrew's OpenSSL 1.1 (which is upgraded) add the following to your ~/.zshrc:
