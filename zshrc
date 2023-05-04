@@ -32,7 +32,7 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
 
 # Edit postgres history with vim
-export PSQL_EDITOR=/usr/local/bin/vim
+export PSQL_EDITOR=vim
 
 # vscode
 path=("/Applications/Visual Studio Code.app/Contents/Resources/app/bin" $path)
