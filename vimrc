@@ -67,6 +67,7 @@ call plug#begin()
 Plug 'chriskempson/base16-vim'
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ervandew/supertab'
 
 " Initialize plugin system
 call plug#end()
