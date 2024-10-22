@@ -30,6 +30,10 @@ export BROWSER=/usr/bin/open
 # To link Rubies to Homebrew's OpenSSL 1.1 (which is upgraded) add the following to your ~/.zshrc:
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
+export EDITOR=vim
+
+# Edit git commit messages with vim
+export GIT_EDITOR=vim
 
 # Edit postgres history with vim
 export PSQL_EDITOR=vim
