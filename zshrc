@@ -52,3 +52,7 @@ export PATH
 export PKG_CONFIG_PATH="/opt/homebrew/opt/imagemagick@6/lib/pkgconfig"
 
 source ~/.env
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/simeon/.local/bin:$PATH"
