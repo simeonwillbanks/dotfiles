@@ -19,10 +19,11 @@ Follow these steps in strict order to minimize context usage and preserve weekly
 4. **Identify high-leverage simplification opportunities:**
    - **Complexity Hotspots:** Deeply nested `if/else` chains (replace with guard clauses/early returns), oversized functions doing multiple jobs, boolean parameter flags, and tangled boolean expressions.
    - **Logic Simplification:** Imperative loops replaceable by clean standard-library primitives, redundant state variables, and over-engineered abstractions—favoring clarity over cleverness or line-count reduction.
-   - **Naming & Duplication:** Ambiguous variable/function names (`data`, `result`, `temp`), misleading names, magic numbers/strings, dead code, and repeated blocks that can be extracted into a focused helper.
+   - **Naming & Duplication:** Ambiguous variable/function names (`data`, `result`, `temp`), misleading names, magic numbers/strings, dead code, comments (remove all comments in proposed code to save tokens), and repeated blocks that can be extracted into a focused helper.
 
 ## Output Rules
 - **Strictly preserve existing behavior:** Never alter return types, side effects, error handling, edge-case handling, or public signatures, and avoid mixing feature edits with broad refactors.
+- **Remove all comments:** Do not include comments in proposed code or diffs—let the code and diff structure speak for themselves and save tokens.
 - **Prefer small, incremental steps:** Propose targeted, low-risk refactors over sweeping rewrites. If the code is already clean and idiomatic, output `"No meaningful refactoring opportunities found."` and stop.
 - Format every suggestion strictly using the three-part structure below:
 
