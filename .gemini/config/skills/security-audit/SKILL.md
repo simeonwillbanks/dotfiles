@@ -23,6 +23,7 @@ Follow these steps in strict order to minimize context size and preserve weekly 
 
 ## Output Rules
 - Prioritize findings by **real-world exploitability and blast radius**—skip theoretical low-impact nitpicks on internal-only helper code.
+- **Remove all comments:** Do not include comments in recommended code fixes or diffs to save tokens.
 - Order findings from **Critical** to **Low**. If no exploitable vulnerabilities or bottlenecks exist, output `"No security vulnerabilities or critical performance risks found."` and stop.
 - Format every finding strictly using the four-part structure below:
 

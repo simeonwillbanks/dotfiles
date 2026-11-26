@@ -25,6 +25,7 @@ Follow these steps in strict order to minimize token usage and preserve weekly q
 ## Output Rules
 - Keep feedback constructive, concise, and backed by concrete code examples rather than vague advice.
 - Do not repeat issues already reported by the linter output unless explaining an architectural fix.
+- **Remove all comments:** Do not include comments in suggested code or diffs to save tokens.
 - Prefix every finding with **[Critical]**, **[Required]**, or **[Nit]** so optional style tweaks are clearly separated from real bugs and architectural issues.
 - Structure your response strictly into these three sections:
 
@@ -37,7 +38,7 @@ Group observations by `<file_path>:<line_number>`:
 - **[Critical | Required | Nit]** **[Readability | Bug Risk | Performance | Best Practice]** Concise explanation of the issue and why it matters in this framework/language.
 
 ### 3. Improvement Suggestions
-Provide actionable, copy-pasteable code examples or diffs for the highest-impact improvements:
+Provide actionable, copy-pasteable code examples or diffs for the highest-impact improvements without comments:
 ```diff
 - <original implementation>
 + <recommended refactor>

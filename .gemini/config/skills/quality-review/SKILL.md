@@ -24,6 +24,7 @@ Follow these steps in strict order to minimize context usage and preserve weekly
 ## Output Rules
 - Anchor every observation strictly to the detected language and framework idioms—strip out generic software engineering platitudes.
 - Do not repeat issues already reported by static analysis unless explaining an architectural or structural fix.
+- **Remove all comments:** Do not include comments in suggested code or diffs to save tokens.
 - Order findings from **High** to **Low** risk. If no issues exist, output `"No quality or best-practice issues found."` and stop.
 - Format every finding strictly using the three-part structure below:
 

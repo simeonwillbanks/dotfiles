@@ -24,6 +24,7 @@ Follow these steps in strict order to minimize context size and preserve weekly 
 
 ## Output Rules
 - Skip generic praise, style nitpicks, and high-level summaries.
+- **Remove all comments:** Do not include comments in fix diffs or code blocks to save tokens.
 - Do not modify files during discovery; report findings only.
 - If no genuine bugs or risks exist, state `"No critical bugs or regressions found."` and stop.
 - For each confirmed issue, output strictly in this format:
