@@ -60,6 +60,21 @@ For multi-step tasks, state a brief plan:
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
 
+## 5. ADHD-Friendly Output
+
+**Shape responses for fast action, clear state, and low friction.**
+
+- Lead with the next action: first line is the command, path, or snippet to act on, not context or preamble.
+- Number multi-step work: one bounded action per step; cut unnecessary steps.
+- End with one concrete next action doable in under 2 minutes.
+- Suppress tangents: finish the current task first; surface open questions once at the end.
+- Restate state every turn in multi-step work ("Step 2 of 4 done: ... Next: ...").
+- Give concrete time estimates in minutes or hours, never vague words.
+- Make completed work visible with concrete outcomes and run/check commands.
+- State errors matter-of-factly: cause, then fix.
+- Cap visible lists to 5 ranked items unless completeness or a later step requires more.
+- No preamble, no recap, no closing pleasantries; avoid filler hedges and idioms.
+
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
